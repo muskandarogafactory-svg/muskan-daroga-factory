@@ -4,500 +4,466 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b1b">
-<meta name="description" content="Muskan Study Hub - Online Study, Notes, PDF and Test Series">
-<title>Muskan Study Hub | Learn • Practice • Succeed</title>
+<meta name="theme-color" content="#07142f">
+<meta name="description" content="UP SI Daroga Mahasankalp Batch 2026-27 Study Portal, Course Curriculum and Syllabus">
+<title>UP SI दरोगा महा-संकल्प 2026–27 | Muskan Study Hub</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --bg:#080b1b;
-  --panel:#111832;
-  --panel2:#171f40;
-  --cyan:#37e8ff;
-  --purple:#9b6bff;
-  --pink:#ff62c8;
-  --white:#f8faff;
-  --muted:#aab5d1;
-  --border:#ffffff18;
+ --bg:#071126;
+ --panel:#101e3d;
+ --panel2:#14274b;
+ --cyan:#27e4ff;
+ --gold:#ffd34d;
+ --pink:#ff64c8;
+ --purple:#a38bff;
+ --white:#f8faff;
+ --muted:#b8c5df;
+ --border:#ffffff1c;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
 body{
-  font-family:Poppins,sans-serif;
-  background:var(--bg);
-  color:var(--white);
-  line-height:1.7;
+ font-family:Poppins,Arial,sans-serif;
+ background:var(--bg);color:var(--white);line-height:1.7;
 }
 a{text-decoration:none;color:inherit}
-button,input,textarea{font:inherit}
-.container{width:min(1160px,92%);margin:auto}
-section{padding:80px 0}
+button{font:inherit}
+.container{width:min(1150px,92%);margin:auto}
+section{padding:70px 0}
 h1,h2,h3{line-height:1.3}
-h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+h2{font-size:clamp(1.8rem,4vw,2.6rem)}
 p{color:var(--muted)}
-.section-head{text-align:center;max-width:720px;margin:0 auto 40px}
-.section-head p{margin-top:12px}
-.gradient-text{
-  background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
+.gradient{
+ background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));
+ -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.topbar{
-  background:#050714;
-  border-bottom:1px solid var(--border);
-  padding:9px 0;
-  font-size:12px;
-}
-.topbar .container{
-  display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
-}
-.topbar a{color:var(--cyan)}
+.topbar{background:#040a18;border-bottom:1px solid var(--border);padding:8px 0;font-size:12px}
+.topbar .container{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.topbar strong{color:var(--gold)}
 header{
-  position:sticky;top:0;z-index:100;
-  background:#080b1bf2;backdrop-filter:blur(15px);
-  border-bottom:1px solid var(--border);
+ position:sticky;top:0;z-index:100;background:#071126f5;
+ backdrop-filter:blur(15px);border-bottom:1px solid var(--border);
 }
-.nav{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:14px 0}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800}
-.logo-icon{
-  width:45px;height:45px;display:grid;place-items:center;
-  border-radius:14px;background:linear-gradient(135deg,var(--cyan),var(--purple));
-  color:#080b1b;font-size:23px;
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px}
+.brand-icon{
+ width:44px;height:44px;display:grid;place-items:center;border-radius:14px;
+ color:#071126;background:linear-gradient(135deg,var(--cyan),var(--gold));
+ font-size:22px;font-weight:900;flex-shrink:0;
 }
-.logo small{display:block;font-size:10px;letter-spacing:2px;color:var(--cyan)}
+.brand small{display:block;font-size:9px;letter-spacing:1.7px;color:var(--cyan)}
 .nav-links{display:flex;align-items:center;gap:20px}
-.nav-links a{font-size:13px;color:#e1e7ff}
+.nav-links a{font-size:12px;color:#e4eaff}
 .nav-links a:hover{color:var(--cyan)}
-.menu-btn{display:none;background:none;color:white;border:0;font-size:27px}
+.menu-btn{display:none;background:none;border:0;color:white;font-size:27px}
 .btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  padding:12px 21px;border-radius:12px;font-weight:700;font-size:13px;
-  transition:.25s;border:1px solid var(--border);cursor:pointer;
+ display:inline-flex;justify-content:center;align-items:center;gap:8px;
+ padding:12px 19px;border-radius:12px;font-size:13px;font-weight:700;
+ border:1px solid var(--border);transition:.25s;cursor:pointer;
 }
 .btn:hover{transform:translateY(-3px)}
-.btn-primary{background:linear-gradient(100deg,var(--cyan),#9a9aff);color:#080b1b;border:0}
-.btn-secondary{background:#ffffff08;color:white}
+.btn-gold{background:linear-gradient(100deg,var(--gold),#fff0a5);color:#14213d;border:0}
+.btn-outline{background:#ffffff08;color:white}
 .hero{
-  padding:95px 0 75px;position:relative;overflow:hidden;
-  background:
-    radial-gradient(ellipse at 85% 20%,#773eff2d,transparent 35%),
-    radial-gradient(ellipse at 10% 80%,#00d9ff18,transparent 35%);
+ padding:35px 0 65px;
+ background:radial-gradient(ellipse at 85% 10%,#274c8a44,transparent 45%),
+            radial-gradient(ellipse at 5% 90%,#27e4ff12,transparent 40%);
 }
-.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
-.badge{
-  display:inline-block;border:1px solid #37e8ff55;background:#37e8ff0e;
-  color:var(--cyan);padding:7px 13px;border-radius:30px;font-size:11px;
-  letter-spacing:1px;
+.hero-label{
+ display:inline-block;border:1px solid #ffd34d70;background:#ffd34d12;
+ color:var(--gold);padding:7px 13px;border-radius:30px;font-size:11px;
+ letter-spacing:1px;margin-bottom:18px;
 }
-.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);margin:22px 0;line-height:1.15}
-.hero p{max-width:600px}
-.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
-.hero-art{
-  min-height:330px;display:grid;place-items:center;position:relative;
+.hero h1{font-size:clamp(2rem,5.2vw,3.8rem);margin-bottom:15px}
+.hero p{font-size:14px;max-width:720px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:23px}
+.thumbnail-wrap{
+ margin-top:30px;overflow:hidden;border-radius:22px;
+ border:2px solid #ffd34d80;box-shadow:0 15px 50px #0006;
+ background:#101e3d;
 }
-.study-orb{
-  width:min(290px,75vw);aspect-ratio:1;border-radius:50%;
-  display:grid;place-items:center;font-size:105px;
-  background:radial-gradient(circle at 30% 25%,#37e8ff55,#9b6bff30 45%,#111832 72%);
-  border:1px solid #ffffff25;
-  box-shadow:0 0 80px #824dff25,inset 0 0 40px #37e8ff12;
-  animation:float 4s ease-in-out infinite;
+.thumbnail-wrap img{display:block;width:100%;height:auto;object-fit:contain}
+.thumbnail-caption{
+ display:flex;justify-content:space-between;align-items:center;
+ flex-wrap:wrap;gap:10px;padding:14px 18px;
+ background:linear-gradient(90deg,#101e3d,#172b50);
 }
-.float-card{
-  position:absolute;background:#171f40;border:1px solid var(--border);
-  padding:12px 16px;border-radius:13px;font-size:12px;
-  box-shadow:0 10px 35px #0004;
-}
-.float-one{top:35px;right:0;color:var(--cyan)}
-.float-two{bottom:30px;left:0;color:var(--pink)}
-@keyframes float{50%{transform:translateY(-12px)}}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:55px}
+.thumbnail-caption strong{font-size:14px;color:var(--gold)}
+.thumbnail-caption span{font-size:12px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:25px}
 .stat{
-  text-align:center;background:#ffffff06;border:1px solid var(--border);
-  padding:20px 10px;border-radius:16px;
+ text-align:center;padding:18px 10px;border-radius:15px;
+ background:#ffffff06;border:1px solid var(--border);
 }
-.stat strong{display:block;font-size:24px;color:var(--cyan)}
-.stat span{font-size:12px;color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.stat strong{display:block;color:var(--cyan);font-size:18px}
+.stat span{font-size:11px;color:var(--muted)}
+.section-head{text-align:center;max-width:760px;margin:0 auto 35px}
+.section-head p{margin-top:10px;font-size:13px}
+.eyebrow{font-size:11px;letter-spacing:2px;color:var(--cyan);font-weight:700}
+.curriculum-bg{background:#ffffff04;border-block:1px solid var(--border)}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .card{
-  background:linear-gradient(145deg,#151d3a,#0d132a);
-  border:1px solid var(--border);border-radius:20px;padding:24px;
-  transition:.3s;min-width:0;
+ min-width:0;padding:22px;border-radius:18px;
+ background:linear-gradient(145deg,#142448,#0c1731);
+ border:1px solid var(--border);transition:.25s;
 }
-.card:hover{transform:translateY(-6px);border-color:#37e8ff75;box-shadow:0 15px 40px #0003}
-.card-icon{
-  width:53px;height:53px;border-radius:15px;display:grid;place-items:center;
-  font-size:26px;background:#37e8ff13;margin-bottom:18px;
+.card:hover{transform:translateY(-5px);border-color:#27e4ff75;box-shadow:0 12px 35px #0003}
+.card-top{display:flex;align-items:center;gap:13px;margin-bottom:14px}
+.number{
+ width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;
+ border-radius:13px;background:linear-gradient(135deg,#27e4ff25,#a38bff2c);
+ border:1px solid #27e4ff45;color:var(--cyan);font-weight:800;
 }
-.card h3{font-size:18px;margin-bottom:9px}
-.card p{font-size:13px}
-.card .btn{margin-top:19px}
-.tag{
-  display:inline-block;background:#9b6bff1b;color:#c8b3ff;
-  border-radius:20px;padding:4px 10px;font-size:10px;margin-bottom:12px;
+.card h3{font-size:15px}
+.card p{font-size:12px;margin-top:8px}
+.subject-tag{
+ display:inline-block;margin-top:12px;padding:4px 10px;border-radius:20px;
+ font-size:10px;color:var(--gold);background:#ffd34d13;
+ border:1px solid #ffd34d28;
 }
-.course-card{overflow:hidden;padding:0}
-.course-cover{
-  height:130px;display:grid;place-items:center;font-size:45px;
-  background:linear-gradient(135deg,#12364b,#35205b);
+.syllabus-list{display:grid;gap:12px;max-width:850px;margin:auto}
+.syllabus-item{
+ display:flex;gap:15px;align-items:flex-start;padding:18px;
+ background:#101e3d;border:1px solid var(--border);border-radius:15px;
 }
-.course-body{padding:22px}
-.course-body h3{margin:5px 0 10px}
-.course-body .btn{margin-top:16px}
-.features{background:#ffffff04;border-block:1px solid var(--border)}
-.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.feature{
-  padding:22px 16px;text-align:center;border:1px solid var(--border);
-  border-radius:17px;background:#ffffff05;
+.syllabus-icon{
+ width:42px;height:42px;flex-shrink:0;display:grid;place-items:center;
+ border-radius:12px;background:#27e4ff13;font-size:21px;
 }
-.feature span{font-size:30px}
-.feature h3{font-size:15px;margin:10px 0}
-.feature p{font-size:12px}
-.cta{
-  border:1px solid #9b6bff55;border-radius:25px;padding:40px;
-  background:radial-gradient(ellipse at top right,#9b6bff20,transparent 60%),#111832;
-  text-align:center;
+.syllabus-item h3{font-size:14px;margin-bottom:5px}
+.syllabus-item p{font-size:12px}
+.note{
+ margin-top:22px;padding:15px 18px;border-radius:13px;
+ background:#ffd34d0c;border:1px solid #ffd34d40;
+ color:#f5dfa0;font-size:12px;
 }
-.cta p{margin:12px auto 22px;max-width:600px}
-.contact-box{max-width:650px;margin:auto}
-.contact-box form{display:grid;gap:14px;margin-top:25px}
-input,textarea{
-  width:100%;padding:14px;border-radius:12px;
-  background:#0b1025;border:1px solid var(--border);color:white;
+.teachers{background:#ffffff04;border-block:1px solid var(--border)}
+.teacher-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.teacher{
+ padding:20px 12px;text-align:center;border-radius:17px;
+ background:#101e3d;border:1px solid var(--border);
 }
-textarea{min-height:110px;resize:vertical}
-input:focus,textarea:focus{outline:1px solid var(--cyan)}
-footer{background:#050714;border-top:1px solid var(--border);padding:35px 0 18px}
-.footer-main{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:25px}
-.footer-main p{font-size:12px;margin-top:6px}
-.footer-links{display:flex;gap:16px;flex-wrap:wrap;font-size:12px}
+.teacher-avatar{
+ width:55px;height:55px;border-radius:50%;margin:0 auto 12px;
+ display:grid;place-items:center;font-size:25px;
+ background:linear-gradient(135deg,#27e4ff20,#a38bff35);
+ border:1px solid #ffffff20;
+}
+.teacher h3{font-size:13px}
+.teacher p{font-size:11px;margin-top:5px}
+.callout{
+ padding:32px 20px;text-align:center;border-radius:22px;
+ border:1px solid #a38bff50;
+ background:radial-gradient(ellipse at top right,#a38bff20,transparent 60%),#101e3d;
+}
+.callout p{max-width:650px;margin:12px auto 0;font-size:13px}
+footer{background:#040916;border-top:1px solid var(--border);padding:28px 0 18px}
+.footer-main{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding-bottom:22px}
+.footer-main p{font-size:11px;margin-top:5px}
+.footer-links{display:flex;gap:15px;flex-wrap:wrap;font-size:12px}
 .footer-links a:hover{color:var(--cyan)}
 .footer-bottom{
-  border-top:1px solid var(--border);padding-top:18px;
-  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
-  font-size:12px;color:var(--muted);
+ border-top:1px solid var(--border);padding-top:17px;
+ display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
+ font-size:11px;color:var(--muted);
 }
 .credit{
-  font-weight:800;font-size:15px;letter-spacing:.4px;
-  background:linear-gradient(90deg,#ff4f9a,#ffffff,#ff62c8,#9b6bff,#ff4f9a);
-  background-size:300% auto;
-  -webkit-background-clip:text;background-clip:text;
-  -webkit-text-fill-color:transparent;
-  animation:muskanGlow 3s linear infinite;
-  filter:drop-shadow(0 0 7px #ff62c866);
+ font-size:16px;font-weight:800;letter-spacing:.5px;
+ background:linear-gradient(90deg,#ff4f9a,#fff,#ff64c8,#a38bff,#ff4f9a);
+ background-size:300% auto;
+ -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+ filter:drop-shadow(0 0 7px #ff64c866);
+ animation:muskanGlow 3s linear infinite;
 }
 @keyframes muskanGlow{to{background-position:300% center}}
-.email-link{color:var(--cyan);overflow-wrap:anywhere}
 @media(max-width:850px){
-  .hero-grid{grid-template-columns:1fr}
-  .hero-art{min-height:260px}
-  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .feature-grid{grid-template-columns:repeat(2,1fr)}
-  .nav-links{gap:11px}
-  .nav-links a{font-size:11px}
+ .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .teacher-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .nav-links{gap:12px}
 }
 @media(max-width:650px){
-  section{padding:60px 0}
-  .menu-btn{display:block}
-  .nav-links{
-    display:none;position:absolute;top:100%;left:0;right:0;
-    background:#0b1025;padding:20px 5%;flex-direction:column;align-items:stretch;
-    border-bottom:1px solid var(--border);
-  }
-  .nav-links.open{display:flex}
-  .nav-links a{font-size:14px}
-  .hero{padding:65px 0 50px}
-  .hero-art{min-height:240px}
-  .study-orb{width:220px;font-size:80px}
-  .stats{grid-template-columns:repeat(2,1fr);margin-top:35px}
-  .cards{grid-template-columns:1fr}
-  .feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .cta{padding:27px 18px}
-  .footer-bottom{flex-direction:column}
+ section{padding:55px 0}
+ .menu-btn{display:block}
+ .nav-links{
+  display:none;position:absolute;top:100%;left:0;right:0;padding:20px 5%;
+  background:#09132b;flex-direction:column;align-items:stretch;
+  border-bottom:1px solid var(--border);
+ }
+ .nav-links.open{display:flex}
+ .nav-links a{font-size:14px;padding:4px}
+ .hero{padding-top:28px}
+ .hero h1{font-size:clamp(2rem,9vw,3rem)}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .cards{grid-template-columns:1fr}
+ .teacher-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .thumbnail-caption{align-items:flex-start;flex-direction:column}
+ .footer-bottom{flex-direction:column;align-items:flex-start}
 }
 @media(prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;scroll-behavior:auto!important}
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important}
 }
 </style>
 </head>
 
 <body>
 <div class="topbar">
-  <div class="container">
-    <span>📚 Learn • Practice • Succeed</span>
-    <a href="mailto:muskandarogafactory@gmail.com">✉ Contact Us</a>
-  </div>
+ <div class="container">
+  <span>📚 <strong>UP SI DAROGA • 2026–27</strong></span>
+  <span>हिन्दी माध्यम • Course Curriculum & Syllabus</span>
+ </div>
 </div>
 
 <header>
-  <div class="container nav">
-    <a href="#home" class="logo">
-      <div class="logo-icon">M</div>
-      <div>Muskan Study Hub<small>LEARN • GROW • ACHIEVE</small></div>
-    </a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="navLinks">
-      <a href="#home">Home</a>
-      <a href="#exams">Exams</a>
-      <a href="#courses">Courses</a>
-      <a href="#materials">Study Material</a>
-      <a href="#tests">Test Series</a>
-      <a href="#contact" class="btn btn-primary">Contact</a>
-    </nav>
-  </div>
+ <div class="container nav">
+  <a class="brand" href="#home">
+   <div class="brand-icon">M</div>
+   <div>Muskan Study Hub<small>LEARN • PRACTICE • SUCCEED</small></div>
+  </a>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks">
+   <a href="#home">Home</a>
+   <a href="#curriculum">Course Curriculum</a>
+   <a href="#syllabus">Syllabus</a>
+   <a href="#teachers">Teachers</a>
+  </nav>
+ </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <span class="badge">✦ YOUR DIGITAL LEARNING DESTINATION</span>
-        <h1>आपकी तैयारी का<br><span class="gradient-text">नया Digital Hub</span></h1>
-        <p>Study smart, practice daily and move closer to your goals. प्रतियोगी परीक्षाओं की तैयारी के लिए Notes, Study Material और Test Series एक ही जगह।</p>
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#courses">📚 Explore Courses</a>
-          <a class="btn btn-secondary" href="#tests">✍️ Practice Tests</a>
-        </div>
-      </div>
-      <div class="hero-art">
-        <div class="study-orb">🎓</div>
-        <div class="float-card float-one">⚡ Smart Learning</div>
-        <div class="float-card float-two">📖 आपका लक्ष्य, आपकी मेहनत</div>
-      </div>
-    </div>
-    <div class="stats">
-      <div class="stat"><strong>01</strong><span>Learn Every Day</span></div>
-      <div class="stat"><strong>02</strong><span>Practice Regularly</span></div>
-      <div class="stat"><strong>03</strong><span>Revise Your Notes</span></div>
-      <div class="stat"><strong>04</strong><span>Achieve Your Goals</span></div>
-    </div>
+ <div class="container">
+  <span class="hero-label">★ MAHA-SANKALP BATCH • 2026–2027</span>
+  <h1>UP SI दरोगा<br><span class="gradient">महा-संकल्प बैच 2026–27</span></h1>
+  <p>उत्तर प्रदेश पुलिस सब-इंस्पेक्टर परीक्षा की तैयारी के लिए आपका डिजिटल स्टडी पोर्टल। नीचे कोर्स करिकुलम, विषय और शिक्षक क्रम से देखें।</p>
+
+  <div class="hero-buttons">
+   <a class="btn btn-gold" href="#curriculum">📚 Course Curriculum देखें</a>
+   <a class="btn btn-outline" href="#syllabus">📖 Syllabus देखें</a>
   </div>
+
+  <div class="thumbnail-wrap">
+   <img src="assets/1000647787.jpg"
+        alt="UP SI Daroga Mahasankalp Batch 2026-27 Thumbnail"
+        fetchpriority="high">
+   <div class="thumbnail-caption">
+    <strong>UP SI DAROGA • MAHA-SANKALP</strong>
+    <span>2026–2027 | हिन्दी माध्यम | Live + Recorded</span>
+   </div>
+  </div>
+
+  <div class="stats">
+   <div class="stat"><strong>2026–27</strong><span>बैच सत्र</span></div>
+   <div class="stat"><strong>Hindi</strong><span>हिन्दी माध्यम</span></div>
+   <div class="stat"><strong>Live + Recorded</strong><span>क्लास का प्रकार</span></div>
+   <div class="stat"><strong>UP SI</strong><span>लक्ष्य परीक्षा</span></div>
+  </div>
+ </div>
 </section>
 
-<section id="exams">
-  <div class="container">
-    <div class="section-head">
-      <span class="badge">EXAM CATEGORIES</span>
-      <h2 style="margin-top:15px">अपनी परीक्षा <span class="gradient-text">चुनें</span></h2>
-      <p>अपनी तैयारी के अनुसार परीक्षा का सेक्शन चुनें।</p>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">🏛️</div><h3>UPSC Prelims</h3>
-        <p>सामान्य अध्ययन, रिवीजन और प्रैक्टिस के लिए।</p>
-        <a class="btn btn-secondary" href="#materials">Explore Material →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">📘</div><h3>UPPCS Prelims</h3>
-        <p>उत्तर प्रदेश आधारित विषयों और सामान्य अध्ययन की तैयारी।</p>
-        <a class="btn btn-secondary" href="#materials">Explore Material →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">📝</div><h3>BPSC Prelims</h3>
-        <p>बिहार लोक सेवा आयोग की परीक्षा के लिए अध्ययन सेक्शन।</p>
-        <a class="btn btn-secondary" href="#materials">Explore Material →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">🎯</div><h3>UPSSSC PET</h3>
-        <p>अभ्यास, नोट्स और विषयवार तैयारी की सुविधा।</p>
-        <a class="btn btn-secondary" href="#materials">Explore Material →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">👩‍🏫</div><h3>UP TGT / Teaching</h3>
-        <p>टीचिंग परीक्षाओं की तैयारी के लिए अध्ययन सेक्शन।</p>
-        <a class="btn btn-secondary" href="#courses">Explore Courses →</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">🌐</div><h3>General Studies</h3>
-        <p>इतिहास, भूगोल, राजनीति, अर्थव्यवस्था और विज्ञान।</p>
-        <a class="btn btn-secondary" href="#materials">Explore Material →</a>
-      </article>
-    </div>
+<section class="curriculum-bg" id="curriculum">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">COURSE CURRICULUM</span>
+   <h2 style="margin-top:10px">Course <span class="gradient">Curriculum</span></h2>
+   <p>विषय और शिक्षक बैच के करिकुलम के क्रम में दिए गए हैं।</p>
   </div>
+
+  <div class="cards">
+   <article class="card">
+    <div class="card-top"><div class="number">01</div><h3>मूलविधि (Moolvidhi)</h3></div>
+    <p>कानून और मूलविधि से संबंधित परीक्षा उपयोगी विषय।</p>
+    <span class="subject-tag">Teacher: Prabhu Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">02</div><h3>Geography / भूगोल</h3></div>
+    <p>भौतिक भूगोल, भारत का भूगोल और संबंधित टॉपिक्स।</p>
+    <span class="subject-tag">Teacher: Bhanu Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">03</div><h3>Maths / गणित</h3></div>
+    <p>गणितीय अवधारणाएँ और प्रश्नों का अभ्यास।</p>
+    <span class="subject-tag">Teacher: Shubham Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">04</div><h3>Polity / राजनीति विज्ञान</h3></div>
+    <p>भारतीय संविधान, शासन व्यवस्था और राजव्यवस्था।</p>
+    <span class="subject-tag">Teacher: Prabhu Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">05</div><h3>Reasoning / तर्कशक्ति</h3></div>
+    <p>तार्किक क्षमता और परीक्षा आधारित प्रश्न अभ्यास।</p>
+    <span class="subject-tag">Teacher: Kartik Singh Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">06</div><h3>History / इतिहास</h3></div>
+    <p>भारतीय इतिहास के प्रमुख कालखंड और घटनाएँ।</p>
+    <span class="subject-tag">Teacher: Amarendra Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">07</div><h3>Hindi / हिन्दी</h3></div>
+    <p>हिन्दी भाषा और व्याकरण के परीक्षा उपयोगी टॉपिक्स।</p>
+    <span class="subject-tag">Teacher: Jitendra Soni Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">08</div><h3>General Science / सामान्य विज्ञान</h3></div>
+    <p>विज्ञान की मुख्य अवधारणाएँ और सामान्य ज्ञान।</p>
+    <span class="subject-tag">Teacher: Rajnish Maurya Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">09</div><h3>Computer / कंप्यूटर</h3></div>
+    <p>कंप्यूटर की बुनियादी जानकारी और महत्वपूर्ण टॉपिक्स।</p>
+    <span class="subject-tag">Teacher: Sanjay Srivastava Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">10</div><h3>Economics / अर्थव्यवस्था</h3></div>
+    <p>अर्थव्यवस्था की बुनियादी अवधारणाएँ और प्रमुख विषय।</p>
+    <span class="subject-tag">Teacher: Sukesh Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">11</div><h3>Static GK & Current Affairs</h3></div>
+    <p>स्थैतिक सामान्य ज्ञान और समसामयिक घटनाएँ।</p>
+    <span class="subject-tag">Teacher: Shivam Sir</span>
+   </article>
+
+   <article class="card">
+    <div class="card-top"><div class="number">12</div><h3>Maths — Additional Faculty</h3></div>
+    <p>गणित के अतिरिक्त अध्ययन के लिए शिक्षक सूची में शामिल।</p>
+    <span class="subject-tag">Teacher: Ashutosh Tiwari Sir</span>
+   </article>
+  </div>
+ </div>
 </section>
 
-<section id="courses" class="features">
-  <div class="container">
-    <div class="section-head">
-      <span class="badge">LEARNING ZONE</span>
-      <h2 style="margin-top:15px">Explore <span class="gradient-text">Study Sections</span></h2>
-      <p>यहाँ अपने कोर्स और बैच के लिंक जोड़े जा सकते हैं।</p>
-    </div>
-    <div class="cards">
-      <article class="card course-card">
-        <div class="course-cover">📚</div>
-        <div class="course-body">
-          <span class="tag">GENERAL STUDIES</span>
-          <h3>History & Culture</h3>
-          <p>प्राचीन, मध्यकालीन और आधुनिक इतिहास के अध्ययन के लिए।</p>
-          <a class="btn btn-secondary" href="#contact">Course Details →</a>
-        </div>
-      </article>
-      <article class="card course-card">
-        <div class="course-cover">🌍</div>
-        <div class="course-body">
-          <span class="tag">GENERAL STUDIES</span>
-          <h3>Geography</h3>
-          <p>भौतिक भूगोल, भारत का भूगोल और विश्व भूगोल।</p>
-          <a class="btn btn-secondary" href="#contact">Course Details →</a>
-        </div>
-      </article>
-      <article class="card course-card">
-        <div class="course-cover">⚖️</div>
-        <div class="course-body">
-          <span class="tag">GENERAL STUDIES</span>
-          <h3>Indian Polity</h3>
-          <p>संविधान, संसद, मौलिक अधिकार और शासन व्यवस्था।</p>
-          <a class="btn btn-secondary" href="#contact">Course Details →</a>
-        </div>
-      </article>
-    </div>
+<section id="syllabus">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">EXAM PREPARATION</span>
+   <h2 style="margin-top:10px">Syllabus <span class="gradient">Overview</span></h2>
+   <p>मुख्य विषयों का संक्षिप्त परिचय। आधिकारिक परीक्षा अधिसूचना के अनुसार टॉपिक्स की पुष्टि करें।</p>
   </div>
+
+  <div class="syllabus-list">
+   <article class="syllabus-item">
+    <div class="syllabus-icon">⚖️</div>
+    <div><h3>मूलविधि एवं संविधान</h3><p>कानून से जुड़े आधारभूत विषय, भारतीय संविधान, मौलिक अधिकार और शासन व्यवस्था।</p></div>
+   </article>
+   <article class="syllabus-item">
+    <div class="syllabus-icon">🧠</div>
+    <div><h3>मानसिक योग्यता एवं Reasoning</h3><p>तार्किक सोच, विश्लेषणात्मक क्षमता, श्रृंखला, वर्गीकरण और अन्य अभ्यास विषय।</p></div>
+   </article>
+   <article class="syllabus-item">
+    <div class="syllabus-icon">➗</div>
+    <div><h3>Numerical Ability / गणित</h3><p>संख्या पद्धति, प्रतिशत, अनुपात, औसत और अन्य परीक्षा उपयोगी गणितीय अवधारणाएँ।</p></div>
+   </article>
+   <article class="syllabus-item">
+    <div class="syllabus-icon">🌍</div>
+    <div><h3>General Knowledge & Geography</h3><p>भारत एवं उत्तर प्रदेश का सामान्य ज्ञान, भूगोल, इतिहास और अर्थव्यवस्था से संबंधित विषय।</p></div>
+   </article>
+   <article class="syllabus-item">
+    <div class="syllabus-icon">🔬</div>
+    <div><h3>Science & Computer</h3><p>सामान्य विज्ञान की बुनियादी अवधारणाएँ और कंप्यूटर की महत्वपूर्ण जानकारी।</p></div>
+   </article>
+   <article class="syllabus-item">
+    <div class="syllabus-icon">📰</div>
+    <div><h3>Current Affairs & Hindi</h3><p>समसामयिक घटनाएँ, सामान्य हिन्दी और भाषा से संबंधित परीक्षा उपयोगी विषय।</p></div>
+   </article>
+  </div>
+
+  <div class="note">
+   📌 यह वेबसाइट पर दिया गया विषय-परिचय है, आधिकारिक विस्तृत syllabus PDF नहीं। परीक्षा का अंतिम syllabus और परीक्षा-पैटर्न संबंधित आधिकारिक अधिसूचना से मिलाएँ।
+  </div>
+ </div>
 </section>
 
-<section id="materials">
-  <div class="container">
-    <div class="section-head">
-      <span class="badge">YOUR STUDY LIBRARY</span>
-      <h2 style="margin-top:15px">Notes & <span class="gradient-text">Study Material</span></h2>
-      <p>नीचे दिए गए बटन में अपनी PDF या नोट्स का वास्तविक लिंक जोड़ा जा सकता है।</p>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">📄</div><h3>PDF Notes</h3>
-        <p>विषयवार नोट्स और रिवीजन सामग्री।</p>
-        <a class="btn btn-secondary" href="#contact">Notes Link जोड़ें</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">📖</div><h3>NCERT Resources</h3>
-        <p>बुनियादी अवधारणाओं के अध्ययन के लिए।</p>
-        <a class="btn btn-secondary" href="#contact">Resources देखें</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">🗂️</div><h3>Previous Papers</h3>
-        <p>पिछले वर्षों के प्रश्नपत्रों का सेक्शन।</p>
-        <a class="btn btn-secondary" href="#contact">Paper Link जोड़ें</a>
-      </article>
-    </div>
+<section class="teachers" id="teachers">
+ <div class="container">
+  <div class="section-head">
+   <span class="eyebrow">FACULTY DIRECTORY</span>
+   <h2 style="margin-top:10px">Our <span class="gradient">Teachers</span></h2>
+   <p>शिक्षकों के नाम और विषयों की सूची।</p>
   </div>
-</section>
 
-<section id="tests" class="features">
-  <div class="container">
-    <div class="section-head">
-      <span class="badge">PRACTICE • IMPROVE • REPEAT</span>
-      <h2 style="margin-top:15px">Test <span class="gradient-text">Series</span></h2>
-      <p>अपने टेस्ट प्लेटफॉर्म या ऑनलाइन अभ्यास के लिंक यहाँ जोड़े जा सकते हैं।</p>
-    </div>
-    <div class="cards">
-      <article class="card">
-        <div class="card-icon">🧠</div><h3>UPSC Practice Tests</h3>
-        <p>सामान्य अध्ययन के लिए प्रश्न अभ्यास।</p>
-        <a class="btn btn-primary" href="#contact">Add Test Link</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">✍️</div><h3>UPPCS Test Series</h3>
-        <p>UPPCS परीक्षा के लिए विषयवार मॉक टेस्ट।</p>
-        <a class="btn btn-primary" href="#contact">Add Test Link</a>
-      </article>
-      <article class="card">
-        <div class="card-icon">📊</div><h3>PET / BPSC Tests</h3>
-        <p>नियमित अभ्यास के लिए टेस्ट सेक्शन।</p>
-        <a class="btn btn-primary" href="#contact">Add Test Link</a>
-      </article>
-    </div>
+  <div class="teacher-grid">
+   <article class="teacher"><div class="teacher-avatar">⚖️</div><h3>Prabhu Sir</h3><p>मूलविधि एवं पॉलिटी</p></article>
+   <article class="teacher"><div class="teacher-avatar">🌍</div><h3>Bhanu Sir</h3><p>भूगोल / UP Special</p></article>
+   <article class="teacher"><div class="teacher-avatar">➗</div><h3>Shubham Sir</h3><p>गणित</p></article>
+   <article class="teacher"><div class="teacher-avatar">🧩</div><h3>Kartik Singh Sir</h3><p>रीजनिंग</p></article>
+   <article class="teacher"><div class="teacher-avatar">📜</div><h3>Amarendra Sir</h3><p>इतिहास</p></article>
+   <article class="teacher"><div class="teacher-avatar">🔤</div><h3>Jitendra Soni Sir</h3><p>हिन्दी</p></article>
+   <article class="teacher"><div class="teacher-avatar">🔬</div><h3>Rajnish Maurya Sir</h3><p>विज्ञान</p></article>
+   <article class="teacher"><div class="teacher-avatar">💻</div><h3>Sanjay Srivastava Sir</h3><p>कंप्यूटर</p></article>
+   <article class="teacher"><div class="teacher-avatar">📈</div><h3>Sukesh Sir</h3><p>अर्थव्यवस्था</p></article>
+   <article class="teacher"><div class="teacher-avatar">📰</div><h3>Shivam Sir</h3><p>Static GK / Current Affairs</p></article>
+   <article class="teacher"><div class="teacher-avatar">📐</div><h3>Ashutosh Tiwari Sir</h3><p>गणित</p></article>
   </div>
+ </div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="cta">
-      <span class="badge">KEEP LEARNING</span>
-      <h2 style="margin-top:15px">हर दिन थोड़ा बेहतर बनें ✨</h2>
-      <p>नियमित अध्ययन करें, अपने नोट्स दोहराएँ और लक्ष्य की ओर लगातार आगे बढ़ें।</p>
-      <a class="btn btn-primary" href="#exams">Start Exploring →</a>
-    </div>
+ <div class="container">
+  <div class="callout">
+   <span class="eyebrow">YOUR GOAL • YOUR PREPARATION</span>
+   <h2 style="margin-top:10px">मेहनत जारी रखें <span class="gradient">और लक्ष्य हासिल करें!</span></h2>
+   <p>नियमित अध्ययन, अभ्यास और रिवीजन आपकी तैयारी को बेहतर बनाने में मदद कर सकते हैं।</p>
   </div>
-</section>
-
-<section id="contact">
-  <div class="container contact-box">
-    <div class="section-head">
-      <span class="badge">CONTACT & SUPPORT</span>
-      <h2 style="margin-top:15px">हमसे <span class="gradient-text">संपर्क करें</span></h2>
-      <p>कोर्स, नोट्स या टेस्ट लिंक जोड़ने के लिए ईमेल करें।</p>
-      <p><a class="email-link" href="mailto:muskandarogafactory@gmail.com">muskandarogafactory@gmail.com</a></p>
-    </div>
-    <form id="contactForm">
-      <input name="name" placeholder="आपका नाम / Your Name" required>
-      <input name="subject" placeholder="किस बारे में संपर्क करना है?" required>
-      <textarea name="message" placeholder="अपना संदेश लिखें..." required></textarea>
-      <button class="btn btn-primary" type="submit">✉ Send Email</button>
-      <p style="font-size:11px">ईमेल ऐप खुलेगा; संदेश भेजने के लिए उसमें Send दबाएँ।</p>
-    </form>
-  </div>
+ </div>
 </section>
 </main>
 
 <footer>
-  <div class="container">
-    <div class="footer-main">
-      <div class="logo">
-        <div class="logo-icon">M</div>
-        <div>Muskan Study Hub<small>LEARN • GROW • ACHIEVE</small></div>
-      </div>
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#exams">Exams</a>
-        <a href="#courses">Courses</a>
-        <a href="#materials">Notes</a>
-        <a href="#tests">Tests</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Muskan Study Hub. All Rights Reserved.</span>
-      <span class="credit">Developer by 💓Muskan💓</span>
-    </div>
+ <div class="container">
+  <div class="footer-main">
+   <div class="brand">
+    <div class="brand-icon">M</div>
+    <div>Muskan Study Hub<small>UP SI DAROGA • 2026–27</small></div>
+   </div>
+   <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#curriculum">Curriculum</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#teachers">Teachers</a>
+   </div>
   </div>
+  <div class="footer-bottom">
+   <span>© <span id="year"></span> Muskan Study Hub</span>
+   <span class="credit">Developer by 💓Muskan💓</span>
+  </div>
+ </div>
 </footer>
 
 <script>
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
 
-menuBtn.addEventListener('click', function(){
-  const open = navLinks.classList.toggle('open');
-  menuBtn.textContent = open ? '✕' : '☰';
-  menuBtn.setAttribute('aria-expanded', String(open));
+menuBtn.addEventListener('click',function(){
+ const opened=navLinks.classList.toggle('open');
+ menuBtn.textContent=opened?'✕':'☰';
+ menuBtn.setAttribute('aria-expanded',String(opened));
 });
 
 navLinks.querySelectorAll('a').forEach(function(link){
-  link.addEventListener('click', function(){
-    navLinks.classList.remove('open');
-    menuBtn.textContent = '☰';
-    menuBtn.setAttribute('aria-expanded','false');
-  });
+ link.addEventListener('click',function(){
+  navLinks.classList.remove('open');
+  menuBtn.textContent='☰';
+  menuBtn.setAttribute('aria-expanded','false');
+ });
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
-
-document.getElementById('contactForm').addEventListener('submit', function(event){
-  event.preventDefault();
-  const data = new FormData(event.currentTarget);
-  const subject = data.get('subject') || 'Website Enquiry';
-  const body =
-    'Name: ' + (data.get('name') || '') + '\n\n' +
-    'Message:\n' + (data.get('message') || '');
-
-  window.location.href =
-    'mailto:muskandarogafactory@gmail.com?subject=' +
-    encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
