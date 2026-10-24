@@ -171,15 +171,40 @@ footer{background:#040916;border-top:1px solid var(--border);padding:28px 0 18px
  display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;
  font-size:11px;color:var(--muted);
 }
+
+/* Sirf muskan ke naam ka rainbow effect */
 .credit{
- font-size:16px;font-weight:800;letter-spacing:.5px;
- background:linear-gradient(90deg,#ff4f9a,#fff,#ff64c8,#a38bff,#ff4f9a);
- background-size:300% auto;
- -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
- filter:drop-shadow(0 0 7px #ff64c866);
- animation:muskanGlow 3s linear infinite;
+ font-size:16px;
+ font-weight:800;
+ letter-spacing:.5px;
+ color:#ffffff;
 }
-@keyframes muskanGlow{to{background-position:300% center}}
+.rainbow-name{
+ display:inline-block;
+ font-weight:900;
+ background:linear-gradient(
+   90deg,
+   #ff0000,
+   #ff8c00,
+   #ffff00,
+   #00ff00,
+   #00cfff,
+   #304bff,
+   #c000ff,
+   #ff0080,
+   #ff0000
+ );
+ background-size:400% auto;
+ -webkit-background-clip:text;
+ background-clip:text;
+ -webkit-text-fill-color:transparent;
+ filter:drop-shadow(0 0 7px #ff64c866);
+ animation:muskanGlow 4s linear infinite;
+}
+@keyframes muskanGlow{
+ to{background-position:400% center}
+}
+
 @media(max-width:850px){
  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
  .teacher-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -440,7 +465,7 @@ footer{background:#040916;border-top:1px solid var(--border);padding:28px 0 18px
   </div>
   <div class="footer-bottom">
    <span>© <span id="year"></span> Muskan Study Hub</span>
-   <span class="credit">Developer by 💓Muskan💓</span>
+   <span class="credit">Developer by <span class="rainbow-name">💓muskan💓</span></span>
   </div>
  </div>
 </footer>
